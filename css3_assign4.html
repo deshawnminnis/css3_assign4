@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gradient Divs</title>
+    <style type="text/css">
+        .linearGrad {
+            height: 150px;
+            width: 200px;
+            background: red;
+            background: -webkit-linear-gradient(red, yellow);
+            background: -o-linear-gradient(red, yellow);
+            background: -moz-linear-gradient(red, yellow);
+            background: linear-gradient(red, yellow);
+        }
+        
+        .radialGrad {
+            height: 150px;
+            width: 200px;
+            background: red;
+            background: -webkit-radial-gradient(red 5%, yellow 15%, green 60%);
+            background: -o-radial-gradient(red 5%, yellow 15%, green 60%);
+            background: -moz-radial-gradient(red 5%, yellow 15%, green 60%);
+            background: radial-gradient(red 5%, yellow 15%, green 60%);
+        }
+        
+        .radialCircle {
+            height: 150px;
+            width: 200px;
+            background: red;
+            background: -webkit-radial-gradient(circle, red, yellow, green);
+            background: -o-radial-gradient(circle, red, yellow, green);
+            background: -moz-radial-gradient(circle, red, yellow, green);
+            background: radial-gradient(circle, red, yellow, green);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Linear Gradient Example</h1>
+    <div class="linearGrad"></div>
+    <h2>Radial Gradient Example</h2>
+    <div class="radialGrad"></div>
+    <h2>Gradient Ellipse Example</h2>
+    <div class="radialCircle"></div>
+
+</body>
+
+</html>
